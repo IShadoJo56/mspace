@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* FONDO */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #806cd2, #ff758c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* CONTENEDOR */
+.home-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 25px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+/* TEXTO */
+.home-container h1 {
+  font-size: 2rem;
+  color: #2a5298;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* LISTA */
+.event-list {
+  list-style-position: inside;
+}
+
+.event-list li {
+  margin-bottom: 20px;
+}
+
+/* BOTONES */
+.event-button {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ff5e78, #ff3d68);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* CORAZONES */
+.hearts span {
+  position: absolute;
+  font-size: 5rem;
+  opacity: 0.15;
+  animation: float 12s linear infinite;
+}
+
+.hearts span:nth-child(1) {
+  left: 2%;
+  animation-duration: 14s;
+}
+
+.hearts span:nth-child(2) {
+  left: 20%;
+  animation-duration: 18s;
+}
+
+.hearts span:nth-child(3) {
+  left: 45%;
+  animation-duration: 16s;
+}
+
+.hearts span:nth-child(4) {
+  left: 65%;
+  animation-duration: 20s;
+}
+
+.hearts span:nth-child(5) {
+  left: 85%;
+  animation-duration: 22s;
+}
+
+.hearts span:nth-child(6) {
+  left: 10%;
+  animation-duration: 14s;
+}
+
+.hearts span:nth-child(7) {
+  left: 30%;
+  animation-duration: 18s;
+}
+
+.hearts span:nth-child(8) {
+  left: 55%;
+  animation-duration: 16s;
+}
+
+.hearts span:nth-child(9) {
+  left: 75%;
+  animation-duration: 20s;
+}
+
+.hearts span:nth-child(10) {
+  left: 90%;
+  animation-duration: 22s;
+}
+
+/* ANIMACIÓN SUAVE */
+@keyframes float {
+  0% {
+    bottom: -10%;
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    bottom: 110%;
+    transform: translateX(-20px) scale(1);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .home-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .event-button {
+    font-size: 1rem;
+  }
+}
